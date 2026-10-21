@@ -1,0 +1,70 @@
+.protected-label { color: #08746d !important; font-weight: 700; }
+
+.privacy-section { border-color: #cfc8ef !important; background: linear-gradient(135deg, #fff, #faf9ff) !important; }
+.privacy-option { display: flex; align-items: flex-start; gap: 12px; padding: 17px; border: 1px solid #d9d3ef; border-radius: 11px; background: #fff; cursor: pointer; }
+.privacy-option > input, .privacy-nested input { position: absolute; opacity: 0; pointer-events: none; }
+.privacy-option > svg { width: 21px; color: #6d5bd0; flex: none; margin-top: 2px; }
+.privacy-option strong, .privacy-option small, .privacy-nested strong, .privacy-nested small { display: block; }
+.privacy-option strong, .privacy-nested strong { color: #324d4b; font-size: 13px; }
+.privacy-option small, .privacy-nested small { color: #6d807d; font-weight: 400; line-height: 1.5; margin-top: 4px; }
+.custom-check { width: 20px; height: 20px; flex: none; border: 1.5px solid #aebfbc; border-radius: 5px; display: grid; place-items: center; color: transparent; }
+.custom-check svg { width: 14px; }
+input:checked + .custom-check { color: #fff; background: #6d5bd0; border-color: #6d5bd0; }
+.privacy-nested { margin: 12px 0 0 32px; padding: 15px; border-left: 2px solid #cbc2ed; background: #f7f5ff; border-radius: 0 9px 9px 0; }
+.privacy-nested label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+.privacy-nested p { display: flex; align-items: flex-start; gap: 7px; color: #716891; font-size: 11px; margin: 13px 0 0; line-height: 1.5; }
+.privacy-nested p svg { width: 16px; flex: none; }
+.protected-banner { display: flex; align-items: center; gap: 11px; background: #eaf6f2; color: #08746d; border-radius: 10px; padding: 12px 14px; margin-top: 20px; }
+.protected-banner > svg { width: 20px; flex: none; }
+.protected-banner strong, .protected-banner span { display: block; }
+.protected-banner strong { font-size: 12px; }
+.protected-banner span { font-size: 10px; margin-top: 2px; color: #55736e; }
+
+@media (max-width: 560px) { .privacy-nested { margin-left: 0; } }
+
+.protected-default { border-color: #a9d9cc !important; background: linear-gradient(135deg, #f7fcfa, #fff) !important; }
+.privacy-assurance, .identity-warning, .protected-callout, .owner-privacy-note, .consent-note { display: flex; align-items: flex-start; gap: 12px; }
+.privacy-assurance { padding: 18px; border-radius: 12px; background: #e8f6f1; color: #08746d; margin-bottom: 14px; }
+.privacy-assurance > svg, .identity-warning > svg, .protected-callout > svg, .consent-note > svg { flex: none; }
+.privacy-assurance strong { font-size: 14px; }
+.privacy-assurance p { color: #55736e; font-size: 12px; line-height: 1.6; margin: 4px 0 0; }
+.identity-warning { background: #fff8e8; border: 1px solid #f0dfb4; color: #755a18; padding: 13px; border-radius: 10px; font-size: 11px; line-height: 1.5; margin-bottom: 18px; }
+.protected-callout { background: linear-gradient(105deg,#0c6963,#0a4e4a); color: white; border-radius: 14px; padding: 22px; margin-bottom: 22px; align-items: center; }
+.protected-callout > svg { width: 34px; height: 34px; }
+.protected-callout strong { font-size: 15px; }
+.protected-callout p { color: #cbe2df; font-size: 11px; margin: 4px 0 0; }
+.protected-actions { display: flex; gap: 8px; margin-left: auto; }
+.protected-actions .secondary { background: white; }
+.owner-privacy-note { align-items: center; color: #08746d; background: #eaf6f2; padding: 10px 12px; border-radius: 8px; font-size: 11px; font-weight: 700; margin-bottom: 12px; }
+.owner-privacy-note svg { width: 17px; }
+.conversation-shell { max-width: 880px; margin: auto; background: white; border: 1px solid var(--line); border-radius: 15px; overflow: hidden; }
+.conversation-header { display: flex; align-items: center; gap: 13px; padding: 22px; border-bottom: 1px solid var(--line); }
+.protected-avatar { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 14px; background: #e5f4ef; color: var(--green); }
+.conversation-header span { color: var(--green); font-size: 9px; font-weight: 800; letter-spacing: .8px; }
+.conversation-header h1 { font-size: 18px; margin: 2px 0; }
+.conversation-header p { font-size: 10px; color: var(--muted); margin: 0; }
+.conversation-status { margin-left: auto; display: flex; align-items: center; gap: 6px; color: var(--green); background: #edf8f4; border-radius: 18px; padding: 8px 11px; font-size: 10px; font-weight: 700; }
+.conversation-status svg { width: 14px; }
+.consent-note { padding: 15px 22px; background: #f4f1ff; color: #6757ad; }
+.consent-note strong { font-size: 12px; }
+.consent-note p { font-size: 10px; line-height: 1.5; margin: 3px 0 0; color: #766d9c; }
+.messages { min-height: 330px; padding: 28px 22px; background: #fbfcfc; display: flex; flex-direction: column; gap: 18px; }
+.message { display: flex; align-items: flex-end; gap: 9px; max-width: 72%; }
+.message > span { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 9px; background: #e9f4f1; color: var(--green); flex: none; }
+.message > span svg { width: 15px; }
+.message > div { background: white; border: 1px solid var(--line); border-radius: 12px 12px 12px 3px; padding: 12px; }
+.message.mine { align-self: flex-end; }
+.message.mine > div { background: #0b6b64; color: white; border: 0; border-radius: 12px 12px 3px 12px; }
+.message small { font-size: 8px; font-weight: 800; letter-spacing: .6px; color: #78908c; }
+.message.mine small, .message.mine time { color: #c4e1dd; }
+.message p { font-size: 12px; line-height: 1.55; margin: 5px 0; }
+.message time { font-size: 8px; color: #93a4a1; }
+.conversation-compose { display: flex; gap: 9px; padding: 16px 22px; border-top: 1px solid var(--line); }
+.conversation-compose input { flex: 1; border: 1px solid #cfddda; border-radius: 9px; padding: 12px; }
+.identity-consent { display: flex; align-items: center; gap: 15px; padding: 17px 22px; background: #f5f8f7; border-top: 1px solid var(--line); }
+.identity-consent div { flex: 1; }
+.identity-consent strong { font-size: 12px; }
+.identity-consent p { color: var(--muted); font-size: 10px; margin: 3px 0 0; }
+.consent-toast { margin: 0 22px 18px; }
+@media(max-width:780px){.protected-callout{align-items:flex-start;flex-wrap:wrap}.protected-actions{margin-left:46px}.conversation-status{display:none}}
+@media(max-width:560px){.protected-actions{margin-left:0;flex-direction:column;width:100%}.message{max-width:90%}.identity-consent{align-items:flex-start;flex-direction:column}.conversation-compose .btn{font-size:0}.conversation-compose .btn svg{margin:0}}
